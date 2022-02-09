@@ -28,7 +28,7 @@ Route::get('/moreInfo', [PageController::class, 'moreInfo'])->name('gm.moreInfo'
 Route::get('/curricularPlan', [PageController::class, 'curricularPlan'])->name('gm.curricularPlan');
 Route::get('/partnerships', [PageController::class, 'partnerships'])->name('gm.partnerships');
 Route::get('/postsList',[PostController::class, 'posts'])->name('gm.posts');
-Route::get('/showPost/{post}',[PostController::class, 'showPost'])->name('gm.showPosts');
+Route::get('/showPost/{post}',[PostController::class, 'showPost'])->name('gm.showPost');
 
 Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::get('/users/{user}/send_reactivate_mail',
