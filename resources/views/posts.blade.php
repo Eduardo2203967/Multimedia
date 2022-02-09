@@ -1,4 +1,71 @@
 @extends("layout.master")
+@section("title","AR Meirinhas - Posts")
+@section("content")
+
+    
+<form action="POST">
+<section id="main-noticia">
+    <div id="left-conteudo-noticia">
+        <div id="header-noticia">
+            <h1>Últimas Notícias</h1>
+        </div>
+
+        @foreach ($posts as $post)
+        <!-- Banner 1-->
+        <div id="conteudo-noticia">
+            <!-- Zona Superior Banner -->
+            <div id="left-conteudo-noticia">
+                <div id="txt-categoria">
+                {{$post->category->name}}
+                </div>
+                <div id="imagem-not">
+                    <img src="img/noticia1.jpg" alt="background1">
+                </div>
+                <!-- Zona Inferior Banner -->
+                <div id="txt-not">
+                    <div id="txt-data">
+                     {{$post->date}} |
+                    </div>
+                    <div id="txt-title">
+                        <h3>
+                            <strong><a href="{{route('gm.showPost',$post)}}" class="post-title">{{$post->title}}</a></strong>
+                        </h3>
+                    </div>
+                    <div id="txt-descri">
+                        <h2>{{$post->description}}</h2>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        @endforeach
+    </div>
+
+
+
+    
+
+
+
+</section>
+</form>
+
+
+@endsection
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- @extends("layout.master")
 @section("title","Games and Multimedia - Admission")
 @section("content")
 <h2 class="section-heading mb-4 text-center ">
@@ -57,4 +124,4 @@
 
 
 
-@endsection
+@endsection -->

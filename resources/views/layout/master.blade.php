@@ -23,13 +23,13 @@
 
   <!-- Custom styles for this template -->
   <link href="{{asset('css/business-casual.css')}}" rel="stylesheet">
+  
 
 </head>
 
 
 <body>
 
-  @include('layout.partials.header')
 
   @include('layout.partials.nav')
 
