@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('Dashboard of Games and Multimedia.') }}
+                    {{ __('Dashboard AR Meirinhas!') }}
                 </div>
             </div>
         </div>

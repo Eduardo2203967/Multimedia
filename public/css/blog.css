@@ -10,11 +10,10 @@
 
 body {
   font-family: "Quicksand", sans-serif;
-  display: grid;
   place-items: center;
   height: 100vh;
   background: #7f7fd5;
-  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  background: linear-gradient(to right, #ffffff, #bebebe, #9b9b9b);
 }
 
 .container {
@@ -40,7 +39,7 @@ img {
   box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 1em;
   background: #ECE9E6;
-background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  background: linear-gradient(to right, #FFFFFF, #d0d0d0);;
 
 }
 
@@ -73,7 +72,7 @@ background: linear-gradient(to bottom, #2F80ED, #56CCF2);
 
 .tag-brown {
   background: #D1913C;
-background: linear-gradient(to bottom, #FFD194, #D1913C);
+background: linear-gradient(to bottom, #d8b17e, #D1913C);
   color: #fafafa;
 }
 

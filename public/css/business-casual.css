@@ -50,7 +50,7 @@ td[colspan]{
   background-color:rgba(47, 23, 15, 0.9);
 }
 a{
-  color:firebrick;
+  color: grey;
 }
 a:hover{
   color:grey;
@@ -213,8 +213,8 @@ p {
 }
 
 .cta {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  
+  padding-bottom: 1rem;
 }
 
 .cta .cta-inner {

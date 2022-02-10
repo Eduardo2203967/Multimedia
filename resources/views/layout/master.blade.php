@@ -36,12 +36,8 @@
 
   <section class="page-section cta">
     <div class="container">
-      <div class="row">
-        <div class="col-xl-10 mx-auto">
           <div class="cta-inner rounded">
             @yield('content')
-          </div>
-        </div>
       </div>
 
     </div>

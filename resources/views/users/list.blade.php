@@ -10,10 +10,10 @@
 		<div class="card-header py-3">
 			@can("create",App\Models\User::class)
 			<a class="btn btn-primary" href="{{route('users.create')}}">
-				<i class="fas fa-plus"></i> Add User
+				<i class="fas fa-plus"></i> Adicionar Utilizador
 			</a>
 			@else
-			<span class="btn btn-secondary disabled"> Add User
+			<span class="btn btn-secondary disabled"> Adicionar Utilizador
 			</span>
 			@endcan
 		</div>
@@ -25,12 +25,12 @@
 					<form method="GET" action="{{route('users.index')}}" class="form-group">
 
 						<div class="form-group">
-							<label for="inputName">Name</label>
+							<label for="inputName">Nome</label>
 							<input type="text" class="form-control" name="name" id="inputName" value="{{request()->get('name')}}" />
 						</div>
 						<div class="form-group">
 							<label for="inputEmail">Email</label>
-							<input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email address" value="{{request()->get('email')}}" />
+							<input type="email" class="form-control" name="email" id="inputEmail" placeholder="Endereço Email" value="{{request()->get('email')}}" />
 						</div>
 						<label for="inputRole">Role</label>
 						<select name="role" id="inputRole" class="form-control">
@@ -41,7 +41,8 @@
 
 						<br>
 						<div class="form-group">
-							<button type="submit" class="btn btn-success">Search</button>
+							<button type="submit" class="btn btn-success">Procurar</button>
+							<a href="{{route('users.index')}}" class="btn btn-default">Cancel</a>
 						</div>
 
 					</form>
@@ -53,8 +54,8 @@
 						<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 							<thead>
 								<tr>
-									<th>Photo</th>
-									<th>Name</th>
+									<th>Foto</th>
+									<th>Nome</th>
 									<th>Email</th>
 									<th>Role</th>
 									<th>Actions</th>
@@ -84,7 +85,7 @@
 										@endcan
 
 										@can("delete",$user)
-										<form method="POST" action="{{route('users.destroy',$user)}}" role="form" class="inline" onsubmit="return confirm('Are you sure you want to delete this record?');">
+										<form method="POST" action="{{route('users.destroy',$user)}}" role="form" class="inline" onsubmit="return confirm('Tem a certeza de que pretende eliminar estes dados?');">
 											@csrf
 											@method('DELETE')
 											<button type="submit" class="btn btn-xs btn-danger btn-p"><i class="fas fa-trash fa-xs"></i></button>
