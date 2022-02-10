@@ -52,7 +52,7 @@
                                 </div>
                             @else
                                 <a href="{{ route('login') }}">
-                                    <span class="mr-2 d-none d-lg-inline text-gray-200 small">Login</span>
+                                    <span class="mr-2 d-none d-lg-inline text-light-200 small">Login</span>
                                 </a>
                             @endif
 
