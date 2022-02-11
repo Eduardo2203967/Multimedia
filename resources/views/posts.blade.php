@@ -2,10 +2,9 @@
 @section("title","AR Meirinhas - Posts")
 
 @section("content")
+
     <div class="text-center pb-3" id="header-noticia">
-        <h1 class="display-6">Últimas Notícias</h1>
-        <hr>
-        
+        <h1 class="shadow-lg p-3 rounded">Últimas Notícias</h1>
     </div>
 
     <div class="container">
@@ -15,25 +14,32 @@
                 <img src="{{ asset('storage/posts_images/' . $post->image) }}" alt="card__image" class="card__image" width="600">
             </div>
             <div class="card__body">
-                <span class="tag tag-brown">{{$post->category->name}}</span>
+                    <span class="tag tag-brown text-center w-25" style="height: 30;">{{$post->category->name}}</span>
+                    
                 <h4><a href="{{route('gm.showPost',$post)}}" class="text-secondary" >{{$post->title}}</a></h4>
                 <p>{{ \Illuminate\Support\Str::words($post->description, $words = 10, $end = '...') }}</p>
             </div>
             <div class="card__footer">
                 <div class="user">
-                @if ($user->photo)
-										<img src="{{asset('storage/users_photos/'.$user->photo)}}" class="img-post" alt="User photo">
-										@else
-										<img src="{{asset('img/default_user.jpg')}}" class="img-post" alt="User photo">
-										@endif
                     <img src="{{asset('img/default_user.jpg')}}" alt="user__image " class="user__image h-100" style="width: 70px;">
                     <div class="user__info">
                         <h5>{{$post->user->name}}</h5>
                         <small> {{$post->date}} </small>
+                        @if (auth()->check())
+                    <a href="{{ route('posts.edit', $post) }}">
+                        <i class="fas fa-pen fa-sm menu-icon-right p-2">
+                        <small class="text-dark">Editar
+                        </small>
+                    </i>
+                </a>
+                    @endif
                     </div>
+                    
                 </div>
             </div>
+            
         </div>
+        
     @endforeach
     </div>
     

@@ -57,21 +57,33 @@
                             @endif
 
                         </li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle userbutton" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="far fa-user fa-lg"></i>
-                </a>
-              <ul class="dropdown-menu dropdown-menu-center text-center" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">@if(Auth::user()) {{ Auth::user()->name }} @endif</a>
-                <hr class="my-1">
-                <a class="dropdown-item" href="#">Perfil</a>
-                <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
-              </ul>
-            </li> -->
           </ul>
 </li>
 
 
       
+    </div>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pronto Para Sair?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Selecione "Logout", se pretende terminar sessão.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <form action="{{route('logout')}}" method="post" class="inline">
+                        @csrf
+                        <button class="btn btn-primary" type="submit">Logout</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </nav>

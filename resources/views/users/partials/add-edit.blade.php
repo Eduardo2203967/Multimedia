@@ -23,7 +23,7 @@
     <label for="inputRole">Role</label>
     <select name="role" id="inputRole" class="form-control">
         <option {{old('role',$user->role)=='A'?"selected":""}} value="A" >Admin</option>
-        <option {{old('role',$user->role)=='N'?"selected":""}} value="N" selected>Normal</option>
+        <option {{old('role',$user->role)=='N'?"selected":""}} value="N" selected>Staff</option>
 
     </select>
 </div>
