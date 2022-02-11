@@ -4,7 +4,7 @@
 @section("content")
 
     <div class="text-center pb-3" id="header-noticia">
-        <h1 class="shadow-lg p-3 rounded">Últimas Notícias</h1>
+        <h1 class="shadow-lg p-3 rounded bg-dark text-light">Últimas Notícias</h1>
     </div>
 
     <div class="container">

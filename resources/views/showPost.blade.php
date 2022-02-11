@@ -4,7 +4,7 @@
 
 
 <div class="text-center pb-3" id="header-noticia">
-    <h1 class="shadow-lg p-3 rounded"> {{$post->title}}</h1>
+    <h1 class="shadow-lg p-3 rounded bg-dark text-light"> {{$post->title}}</h1>
 </div>
 <div class="row">
     <div class="col-md-12">
@@ -21,7 +21,7 @@
         <div>
             <i class="fas fa-calendar-day"></i> Postado em <strong> {{$post->date}} </strong>|
             <strong>Categoria:</strong>
-            <span class="tag tag-brown">{{$post->category->name}}</span>
+            <strong style="text-decoration: underline;">{{$post->category->name}}</strong>
         </div>
         <hr>
         @if ($post->image)
