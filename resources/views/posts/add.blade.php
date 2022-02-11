@@ -7,7 +7,7 @@
 
 	<div class="card shadow mb-4">
 		<div class="card-header py-3">
-			Add Post
+			Adicionar Post
 		</div>
 		<div class="card-body">
 
@@ -15,7 +15,7 @@
                 @csrf
                 @include('posts.partials.add-edit')
 				<div class="form-group">
-					<button type="submit" class="btn btn-success" name="ok">Save</button>
+					<button type="submit" class="btn btn-success" name="ok">Guardar</button>
 					<a href="{{route('posts.index')}}" class="btn btn-default">Cancel</a>
 				</div>
 			</form>

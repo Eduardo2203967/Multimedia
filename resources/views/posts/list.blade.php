@@ -18,12 +18,12 @@
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                             <thead>
                                 <tr>
-                                    <th>Image</th>
-                                    <th>Date</th>
-                                    <th>Title</th>
-                                    <th>Description</th>
-                                    <th>Category</th>
-                                    <th>View More</th>
+                                    <th>Imagem</th>
+                                    <th>Data</th>
+                                    <th>Titulo</th>
+                                    <th>Descrição</th>
+                                    <th>Categoria</th>
+                                    <th>Info</th>
                                     <th>Actions</th>
                                 </tr>
                             </thead>
@@ -45,7 +45,7 @@
                                         <td>{{ $post->category->name }}</td>
                                         <td>
                                             @if ($post->viewMore)
-                                                <a href="{{ $post->viewMore }}">more info</a>
+                                                <a href="{{ $post->viewMore }}">Info</a>
                                             @else
                                                 -
                                             @endif
@@ -57,7 +57,7 @@
                                                 <i class="fas fa-pen fa-xs"></i></a>
                                             <form method="POST" action="{{ route('posts.destroy', $post) }}" role="form"
                                                 class="inline"
-                                                onsubmit="return confirm('Are you sure you want to delete this record?');">
+                                                onsubmit="return confirm('Tem a certeza de que pretende eliminar estes dados?');">
                                                 @csrf
                                                 @method("DELETE")
                                                 <button type="submit" class="btn btn-xs btn-danger btn-p">
@@ -70,7 +70,7 @@
                         </table>
                     </div>
                 @else
-                    <h6>No posts registered</h6>
+                    <h6>Não há Posts registados!</h6>
                 @endif
             </div>
         </div>

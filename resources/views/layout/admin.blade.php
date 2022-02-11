@@ -61,14 +61,14 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUsers"
                     aria-expanded="true" aria-controls="collapseUsers">
                     <i class="fas fa-users"></i>
-                    <span>Users</span>
+                    <span>Utilizadores</span>
                 </a>
                 <div id="collapseUsers" class="collapse" aria-labelledby="headingUsers"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
 
-                        <a class="collapse-item" href="{{ route('users.index') }}">List Users</a>
-                        <a class="collapse-item" href="{{ route('users.create') }}">Add User</a>
+                        <a class="collapse-item" href="{{ route('users.index') }}">Listar Utilizadores</a>
+                        <a class="collapse-item" href="{{ route('users.create') }}">Adicionar Utilizador</a>
                     </div>
                 </div>
             </li>
@@ -76,22 +76,54 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePosts"
                     aria-expanded="true" aria-controls="collapsePosts">
-                    <i class="fas fa-fw fa-folder"></i>
+                    <i class="fas fa-newspaper"></i>
                     <span>Posts</span>
                 </a>
                 <div id="collapsePosts" class="collapse" aria-labelledby="headingPosts"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Categories:</h6>
-                        <a class="collapse-item" href="{{ route('categories.index') }}">List Categories</a>
-                        <a class="collapse-item" href="{{ route('categories.create') }}">Add Category</a>
                         <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Posts:</h6>
-                        <a class="collapse-item" href="{{ route('posts.index') }}">List Posts</a>
-                        <a class="collapse-item" href="{{ route('posts.create') }}">Add Post</a>
+                        <a class="collapse-item" href="{{ route('posts.index') }}">Listar Posts</a>
+                        <a class="collapse-item" href="{{ route('posts.create') }}">Adicionar Post</a>
                     </div>
                 </div>
             </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCategories"
+                    aria-expanded="true" aria-controls="collapseCategories">
+                    <i class="fab fa-xbox"></i>
+                    <span>Categorias</span>
+                </a>
+                <div id="collapseCategories" class="collapse" aria-labelledby="headingCategories"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="{{ route('categories.index') }}">Listar Categorias</a>
+                        <a class="collapse-item" href="{{ route('categories.create') }}">Adicionar Categoria</a>
+                        
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePaginas"
+                    aria-expanded="true" aria-controls="collapsePaginas">
+                    <i class="far fa-file"></i>
+                    <span>Páginas</span>
+                </a>
+                <div id="collapsePaginas" class="collapse" aria-labelledby="headingPaginas"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="{{ route('gm.posts') }}">Posts</a>
+                        <a class="collapse-item" href="{{ route('categories.create') }}">Adicionar Categoria</a>
+                        
+                    </div>
+                </div>
+            </li>
+
+
+
+            
 
 
             <!-- Divider -->

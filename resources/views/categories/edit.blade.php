@@ -15,7 +15,7 @@
 				@method("PUT")
 				@include('categories.partials.add-edit')
 				<div class="form-group">
-					<button type="submit" class="btn btn-success" name="ok">Save</button>
+					<button type="submit" class="btn btn-success" name="ok">Guardar</button>
 
 					<a href="{{route('categories.index')}}" class="btn btn-default">Cancel</a>
     
