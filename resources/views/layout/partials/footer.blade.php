@@ -1,5 +1,5 @@
 <footer class="footer bg-dark text-white text-center py-5">
-<div class="container p-4">
+<div class="container-footer p-4">
     <!-- Section: Social media -->
     <section class="mb-4">
      <!-- Facebook -->

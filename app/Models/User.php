@@ -54,7 +54,7 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         switch ($this->role) {
             case 'N':
-                return 'Normal';
+                return 'Staff';
             case 'A':
                 return 'Admin';
         }

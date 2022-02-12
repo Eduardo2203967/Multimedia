@@ -36,7 +36,7 @@
 						<select name="role" id="inputRole" class="form-control">
 							<option value="">All</option>
 							<option {{(request()->get('role')=='A')?"selected":""}} value="A">Admin</option>
-							<option {{(request()->get('role')=='N')?"selected":""}} value="N">Normal</option>
+							<option {{(request()->get('role')=='N')?"selected":""}} value="N">Staff</option>
 						</select>
 
 						<br>
