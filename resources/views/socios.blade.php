@@ -38,7 +38,8 @@
       <div class="contenido-card">
         <h3>Faz-te sócio</h3>
         <p>Por 20€, com oferta de <span>24€ em quotas + Cachecol ARM.</span></p>
-        <button class="btn3-socios btn2-socios"><a href="{{ route('register') }}"> Aderir </a></button>
+        <a href=""> <button class="btn3-socios btn2-socios">Aderir</button> </a>
+        
       </div>
     </div>
 
@@ -77,7 +78,7 @@
       <li>Item 1</li>
       <li>Item 1</li>
       <li>Item 1</li>
-      <a href="{{route('aderirsocio')}}"><li class="grey"><button class="btn4-socios btn5-socios">Aderir</button></li></a>
+      <a href=""><li class="grey"><button class="btn4-socios btn5-socios">Comprar</button></li></a>
       
     </ul>
   </div>
@@ -90,7 +91,7 @@
       <li>Item 1</li>
       <li>Item 1</li>
       <li>Item 1</li>
-      <a href="{{route('aderirsocio')}}"><li class="grey"><button class="btn4-socios btn5-socios">Aderir</button></li></a>
+      <a href=""><li class="grey"><button class="btn4-socios btn5-socios">Comprar</button></li></a>
     </ul>
   </div>
   
@@ -102,7 +103,7 @@
       <li>Item 1</li>
       <li>Item 1</li>
       <li>Item 1</li>
-      <a href="{{route('aderirsocio')}}"><li class="grey"><button class="btn4-socios btn5-socios">Aderir</button></li></a>
+       <a href=""><li class="grey"><button class="btn4-socios btn5-socios">Comprar</button></li></a>
     </ul>
   </div>
 </div>

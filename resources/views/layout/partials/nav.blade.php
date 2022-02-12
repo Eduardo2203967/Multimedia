@@ -17,7 +17,7 @@
           <a class="nav-link text-white" href="{{route('socios')}}">Sócios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Dúvidas</a>
+          <a class="nav-link text-white" href="{{ route('products.create') }}">Dúvidas</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="#">Contactos</a>

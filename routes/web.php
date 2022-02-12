@@ -7,6 +7,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
 
 
 /*
@@ -31,7 +32,14 @@ Route::get('/postsList',[PostController::class, 'posts'])->name('gm.posts');
 Route::get('/showPost/{post}',[PostController::class, 'showPost'])->name('gm.showPost');
 
 Route::get('/socios', [UserController::class, 'socios'])->name('socios');
-Route::get('/aderirsocio', [UserController::class, 'aderirsocio'])->name('aderirsocio');
+
+
+Route::get('/', function () {
+    return view('home');
+}); 
+
+Route::resource('products', ProductController::class,);
+
 
 Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::get('/users/{user}/send_reactivate_mail',
