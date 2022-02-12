@@ -14,7 +14,7 @@
           <a class="nav-link text-white" href="#">Notícias</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Sócios</a>
+          <a class="nav-link text-white" href="{{route('socios')}}">Sócios</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="#">Dúvidas</a>

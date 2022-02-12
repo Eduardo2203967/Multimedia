@@ -42,6 +42,15 @@ class UserController extends Controller
         return view('users.list', compact("users"));
     }
 
+    public function socios(){
+        return view('socios');
+    }
+
+    public function aderirsocio(){
+        return view('aderirsocio');
+    }
+
+
 
     /**
      * Show the form for creating a new resource.

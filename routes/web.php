@@ -30,6 +30,9 @@ Route::get('/partnerships', [PageController::class, 'partnerships'])->name('gm.p
 Route::get('/postsList',[PostController::class, 'posts'])->name('gm.posts');
 Route::get('/showPost/{post}',[PostController::class, 'showPost'])->name('gm.showPost');
 
+Route::get('/socios', [UserController::class, 'socios'])->name('socios');
+Route::get('/aderirsocio', [UserController::class, 'aderirsocio'])->name('aderirsocio');
+
 Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::get('/users/{user}/send_reactivate_mail',
     [UserController::class,'send_reactivate_email'])->name('users.sendActivationEmail');

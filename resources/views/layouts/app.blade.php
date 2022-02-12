@@ -15,11 +15,15 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{asset('css/socios.css')}}" rel="stylesheet">
+
 </head>
 <body>
+
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -74,6 +78,8 @@
                 </div>
             </div>
         </nav>
+        <!-- Conteudo banner página sócios -->
+        @yield('content-before-container')
 
         <main class="py-4">
             @yield('content')
