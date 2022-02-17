@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-white" href="">Home</a>
+          <a class="nav-link text-white" href="{{ route('gm.index') }}">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="{{ route('gm.posts') }}">Notícias</a>
