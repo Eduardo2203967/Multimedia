@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Home</a>
+          <a class="nav-link text-white" href="">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="{{ route('gm.posts') }}">Notícias</a>
@@ -20,7 +20,7 @@
           <a class="nav-link text-white" href="{{ route('products.create') }}">Dúvidas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Contactos</a>
+          <a class="nav-link text-white" href="{{route('contactos')}}">Contactos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="http://localhost:8888/Wordpress/ARM/">Loja <i class="fas fa-store"></i></a>
