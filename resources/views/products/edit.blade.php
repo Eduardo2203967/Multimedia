@@ -25,6 +25,7 @@
         @method('PUT')
    
         <div class="row">
+            
             <!-- Nome -->
             <div class="col-xs-12 col-sm-12 col-md-7">
                 <div class="form-group">
@@ -51,13 +52,18 @@
 
             <!-- Botoes -->
             <div class="col-xs-12 col-sm-12 col-md-7 text-left">
+
+                <!-- Voltar atrás-->
                 <a class="btn btn-danger" href="{{ route('products.index') }}">
                     <i class="bi bi-arrow-bar-left"></i> Voltar atrás
                 </a>
-                <a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">
+                <!-- Apagar -->
+                <button type="submit" class="btn btn-primary">
                     <i class="bi bi-pencil-square"></i> Editar
-                </a> 
+                </button>
+                
             </div>
+
         </div>
    
     </form>
