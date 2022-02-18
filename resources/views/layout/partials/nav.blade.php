@@ -20,7 +20,7 @@
           <a class="nav-link text-white" href="{{ route('products.create') }}">Dúvidas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="{{route('contactos')}}">Contactos</a>
+          <a class="nav-link text-white" href="#">Contactos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="http://localhost:8888/Wordpress/ARM/">Loja <i class="fas fa-store"></i></a>

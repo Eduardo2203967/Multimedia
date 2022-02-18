@@ -21,17 +21,15 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::get('/', [PageController::class, 'index'])->name('gm.index');
+Route::get('/index', [PageController::class, 'index'])->name('gm.index');
 Route::get('/course', [PageController::class, 'course'])->name('gm.course');
 Route::get('/admission', [PageController::class, 'admission'])->name('gm.admission');
-Route::get('/contacts', [PageController::class, 'contacts'])->name('gm.contacts');
 Route::get('/moreInfo', [PageController::class, 'moreInfo'])->name('gm.moreInfo');
 Route::get('/curricularPlan', [PageController::class, 'curricularPlan'])->name('gm.curricularPlan');
 Route::get('/partnerships', [PageController::class, 'partnerships'])->name('gm.partnerships');
 Route::get('/postsList',[PostController::class, 'posts'])->name('gm.posts');
 Route::get('/showPost/{post}',[PostController::class, 'showPost'])->name('gm.showPost');
 
-Route::get('/contactos', [UserController::class, 'contactos'])->name('contactos');
 Route::get('/socios', [UserController::class, 'socios'])->name('socios');
 
 
@@ -40,6 +38,7 @@ Route::get('/', function () {
 }); 
 
 Route::resource('products', ProductController::class,);
+
 
 Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::get('/users/{user}/send_reactivate_mail',
