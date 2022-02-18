@@ -10,7 +10,8 @@
 <body>
     
 
-<!--@include('layouts.app') -->
+@include('layouts.app')
+
 
 </body>
 </html>

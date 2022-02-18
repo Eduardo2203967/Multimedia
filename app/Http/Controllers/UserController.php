@@ -46,9 +46,10 @@ class UserController extends Controller
         return view('socios');
     }
 
-    public function contactos(){
-        return view('contactos');
+    public function aderirsocio(){
+        return view('aderirsocio');
     }
+
 
 
     /**
