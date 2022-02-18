@@ -1,0 +1,31 @@
+
+h2{
+    font-size: 40px;
+}
+
+.table{
+    width: 95%;
+    margin-left: 30px;
+}
+
+.table th{
+    text-align: center;
+    font-size: 15px;
+}
+
+.btn-success{
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+/* botao index 'mostrar' 'editar' 'apagar' */
+.form{
+    text-align: center;
+}
+
+
+
+
+
+
+

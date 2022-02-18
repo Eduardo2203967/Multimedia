@@ -45,8 +45,8 @@ class ProductController extends Controller
     
         Product::create($request->all());
      
-        return redirect()->route('products.index')
-                        ->with('success','Parabéns! Em breve iremos responder-lhe!');
+        return redirect()->route('products.create')
+            ->with('success','Parabéns! A sua dúvida foi enviada. Em breve entraremos em contacto.');
     }
      
     /**
@@ -88,7 +88,7 @@ class ProductController extends Controller
         $product->update($request->all());
     
         return redirect()->route('products.index')
-                        ->with('success','Dúvida alterada com sucesso!');
+                        ->with('success','Parabéns! A sua dúvida alterada com sucesso!');
     }
     
     /**

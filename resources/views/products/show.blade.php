@@ -29,6 +29,18 @@
                 <p>{{ $product->detail }}</p>
             </div>
         </div>
+<<<<<<< Updated upstream
+=======
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <a class="btn btn-danger" href="{{ route('products.index') }}">
+                <i class="bi bi-arrow-bar-left"></i> Voltar atrás
+            </a>
+            <a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">
+                <i class="bi bi-pencil-square"></i> Editar
+            </a>   
+        </div>
+
+>>>>>>> Stashed changes
     </div>
     <a class="btn btn-danger" href="{{ route('products.index') }}">Voltar atrás</a>
 @endsection

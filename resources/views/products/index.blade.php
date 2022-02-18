@@ -16,8 +16,11 @@
     @endif
    
     <table class="table table-bordered">
-    <a class="btn btn-success" href="{{ route('products.create') }}"> Adicione a dua dúvida</a>
-        <tr>
+        <a class="btn btn-success" href="{{ route('products.create') }}">
+            <i class="bi bi-plus-circle"></i> Adicionar dúvida
+        </a>
+
+        <thead class="thead-dark">
             <th>#</th>
             <th>Nome</th>
             <th>Email</th>
