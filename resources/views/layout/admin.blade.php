@@ -142,6 +142,8 @@
             <!-- Main Content -->
             <div id="content">
 
+            
+
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-nav dark topbar mb-4 static-top shadow">
 
@@ -204,6 +206,8 @@
 
                 <!-- Begin Page Content -->
                 @yield("content")
+
+                <h3 class="text-dark text-center pt-3">Bem Vindo à Dashboard da ARM!</h3>
 
 
             </div>
