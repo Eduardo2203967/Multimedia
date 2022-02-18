@@ -16,7 +16,6 @@
                 <p>{{ $product->name }}</p>
             </div>
         </div>
-        <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Email:</strong>
@@ -29,8 +28,6 @@
                 <p>{{ $product->detail }}</p>
             </div>
         </div>
-<<<<<<< Updated upstream
-=======
         <div class="col-xs-12 col-sm-12 col-md-12">
             <a class="btn btn-danger" href="{{ route('products.index') }}">
                 <i class="bi bi-arrow-bar-left"></i> Voltar atrás
@@ -40,7 +37,5 @@
             </a>   
         </div>
 
->>>>>>> Stashed changes
     </div>
-    <a class="btn btn-danger" href="{{ route('products.index') }}">Voltar atrás</a>
 @endsection

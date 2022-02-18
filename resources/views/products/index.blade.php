@@ -16,6 +16,7 @@
     @endif
    
     <table class="table table-bordered">
+        
         <a class="btn btn-success" href="{{ route('products.create') }}">
             <i class="bi bi-plus-circle"></i> Adicionar dúvida
         </a>
@@ -33,16 +34,24 @@
             <td>{{ $product->name }}</td>
             <td>{{ $product->email }}</td>
             <td>{{ $product->detail }}</td>
-            <td>
+            <td class="form">
+            
                 <form action="{{ route('products.destroy',$product->id) }}" method="POST">
 
-                    <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Mostrar</a>
-                    <a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">Editar</a>
+                    <!-- Botao mostrar -->
+                    <a class="btn btn-secondary" href="{{ route('products.show',$product->id) }}">
+                        <i class="bi bi-eye"></i> Mostrar
+                    </a>
+                    <!-- Botao editar -->
+                    <a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">
+                        <i class="bi bi-pencil-square"></i> Editar
+                    </a>
    
                     @csrf
                     @method('DELETE')
-      
-                    <button type="submit" class="btn btn-danger">Apagar</button>
+                    <button type="submit" class="btn btn-danger">
+                        <i class="bi bi-trash text-light"></i> Apagar
+                    </button>
                 </form>
             </td>
         </tr>
